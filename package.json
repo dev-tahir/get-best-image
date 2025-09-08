@@ -1,0 +1,33 @@
+{
+  "name": "mcp-image-server",
+  "version": "1.0.0",
+  "description": "MCP server for intelligent image search and selection using AI",
+  "main": "build/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "dev": "tsx src/index.ts",
+    "watch": "tsx --watch src/index.ts",
+    "clean": "rmdir /s build",
+    "test": "node test.js"
+  },
+  "keywords": ["mcp", "image", "search", "ai", "flash"],
+  "author": "Tahir",
+  "license": "MIT",
+  "bin": {
+    "mcp-image-server": "build/index.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@modelcontextprotocol/sdk": "^1.17.5",
+    "@types/node": "^24.3.1",
+    "axios": "^1.11.0",
+    "canvas": "^3.2.0",
+    "dotenv": "^17.2.2",
+    "sharp": "^0.34.3",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "uuid": "^12.0.0"
+  }
+}
